@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para aulas de Desenvolvimento Web">
+    <meta name="keywords" content="Site, para, aulas, Desenvolvimento, Web">
+    <meta name="author" content="Aryel Anne">
+    <link rel="stylesheet" href="style.css">
+    <!--Titulo-->
+    <title>Acessibilidade</title>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]&darr;</a></li>
+                <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]&darr;</a></li>
+                <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]&darr;</a></li>
+                <li class="fonte"><a href="javascript:void(0)" id="aumentar" title="Diminuir fonte">A-</a></li>
+                <li class="fonte"><a href="javascript:void(0)" id="diminuir" title="Aumentar fonte">A+</a></li>
+                <li class="contraste"><a href="javascript:void(0)" id="semcontraste" title="Sem contraste">○</a></li>              
+                <li class="contraste"><a href="javascript:void(0)" id="contraste" title="Contraste">●</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+            </ul>
+        </div>
+        <div id="logo">
+            <a href="/index.html" title="página inicial">
+                <img src="imagem/fateclogo.png" alt="Logo Fatec Zona Leste 20 anosnas cores cinza e branco">
+            </a> 
+        </div>
+        <!--menu responsivo-->  
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->  
+        <nav id="menu">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/comentarios.html">Comentários</a></li>
+                <li><a href="/metadados.html">Metadados</a></li>
+                <li><a href="/lista_ordenada.html">Listas</a>
+                    <ul>
+                        <li><a href="/lista_ordenada.html#lista">Lista ordenada</a></li>
+                        <li><a href="/lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="/layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Conteúdo-->
+    <main id="conteudo" tabindex="0" class="acess">
+            <!--Breadcrumb-->
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Inicio</a></li>
+            <li>Acessibilidade</li>
+        </ul>
+        <hr>
+		<h1>ACESSIBILIDADE</h1>
+		<p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.<br>
+        Para aumentar a fonte, é só clicar no símbolo de <b>A+</b> em nossa barra de acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em A-. <br>
+        Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas <code>“Ctrl” e “+”</code> para aumentar todo o site e <code>“Ctrl” e “-“</code> para diminuir. Para voltar ao padrão, pressione <code>“Ctrl” e “0”</code>.</p>
+        Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador web. Utilize sempre a versão mais recente de seu software.</p>
+
+		<h3>Teclas de atalho por navegadores</h3>
+		<h4>- Internet Explorer e Google Chrome:</h4>
+		<p class="p"><code>“Alt” + “1”</code> - ir para o conteúdo</p>
+		<p class="p"><code>“Alt” + “2”</code> - ir para o menu</p>
+		<p><code>“Alt” + “3”</code> - ir para o rodapé</p>
+		<h4>- Firefox:</h4>
+		<p><code>“Alt” + “Shift”</code> + “número”</p>
+		<h4>- Opera:</h4>
+		<p><code>“Shift” + “Escape” + “número”</code></p>
+		<h4>- Safari e OmniWeb:</h4>
+		<p><code>“Ctrl” + “número”</code></p>
+
+		<h3>Navegação por tabulação</h3>
+		<p>Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links, botões, campos de formulário e outros na ordem em que eles são apresentados na página, e <b>Shift + Tab</b> para retornar. Use as setas direcionais para acessar as informações textuais.</p>
+		<h4>Sugestões de programas disponíveis para pessoas com deficiência:</h4>
+        <ul>
+            <li>Nitrous Voice Flux: controla o computador por voz. Gratuito;</li>
+            <li>NVDA: software livre para ler tela – vários idiomas (Windows);</li>
+            <li>YeoSoft Text: leitor de tela em inglês e português;</li>
+            <li>Jaws for Windows: leitor de tela – vários idiomas;</li>
+            <li>Virtual Vision: leitor de telas em português do Brasil;</li>
+            <li>DOSVOX: sistema para deficientes visuais (Windows ou Linux);</li>
+            <li>Talckback: leitor de tela disponível em smartphones Android.</li>
+        </ul>
+	    <p class="obs">Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
+		
+		<h3>LIBRAS - Língua Brasileira de Sinais</h3>
+		<p>Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/" target="_blank">VLibras</a>.</p>
+		<p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
+		<p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>
+	</main>
+    <!--Rodapé-->
+    <footer id="rodape">
+        <p>Desenvolvido por Aryel Anne. Todos os direitos reservados &copy; 2022.</p>
+    </footer>
+</body>
+</html>

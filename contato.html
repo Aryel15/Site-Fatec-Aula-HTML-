@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para aulas de Desenvolvimento Web">
+    <meta name="keywords" content="Site, para, aulas, Desenvolvimento, Web">
+    <meta name="author" content="Aryel Anne">
+    <link rel="stylesheet" href="style.css">
+<!--Titulo-->
+<title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]&darr;</a></li>
+                <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]&darr;</a></li>
+                <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]&darr;</a></li>
+                <li class="fonte"><a href="javascript:void(0)" id="aumentar" title="Diminuir fonte">A-</a></li>
+                <li class="fonte"><a href="javascript:void(0)" id="diminuir" title="Aumentar fonte">A+</a></li>
+                <li class="contraste"><a href="javascript:void(0)" id="semcontraste" title="Sem contraste">○</a></li>              
+                <li class="contraste"><a href="javascript:void(0)" id="contraste" title="Contraste">●</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+            </ul>
+        </div>
+        <div id="logo">
+            <a href="/index.html" title="página inicial">
+                <img src="imagem/fateclogo.png" alt="Logo Fatec Zona Leste 20 anois nas cores cinza e branco">
+            </a>
+        </div>
+        <!--menu responsivo-->  
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->  
+        <nav id="menu">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/comentarios.html">Comentários</a></li>
+                <li><a href="/metadados.html">Metadados</a></li>
+                <li><a href="/lista_ordenada.html">Listas</a>
+                    <ul>
+                        <li><a href="/lista_ordenada.html#lista">Lista ordenada</a></li>
+                        <li><a href="/lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="/layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Conteúdo-->
+    <main id="form">
+        <!--Breadcrumb-->
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Inicio</a></li>
+            <li>Fale Conosco</li>
+        </ul>
+        <hr id="conteudo">
+        <h1>Fale Conosco</h1>
+        <form name="Contato" id="contato" method="post">
+            <div id="form-dados">
+            <fieldset id="fieldset">
+                <legend>Dados pessoais</legend>
+                <label for="nome" class="required">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br>
+                <label for="data" class="required">Data de nascimento</label><br>
+                <input type="date" name="data" id="data" required><br>
+                <label for="cpf" class="required">CPF</label><br>
+                <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
+                <label for="tel">Telefone</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="(99) 99999-9999"><br>
+                <label for="email" class="required">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="nome@site.com.br" required><br>
+            </fieldset>
+            <fieldset id="fieldset">
+                <legend>Dados de endereço</legend>
+                <label for="cep" class="required">CEP</label><br>
+                <input type="text" name="cep" id="cep" placeholder="99999-99" required><br>
+                <label for="rua">Rua/Avenida</label><br>
+                <input type="text" name="rua" id="rua"><br>
+                <label for="numero" class="required">Número</label><br>
+                <input type="number" name="numero" id="numero"required><br>
+                <label for="complemento">Complemento</label><br>
+                <input type="text" name="complemento" id="complemento"><br>
+                <label for="bairro">Bairro</label><br>
+                <input type="text" name="bairro" id="bairro"><br>
+                <label for="cidade">Cidade</label><br>
+                <input type="text" name="cidade" id="cidade"><br>
+                <label for="estado">Estado</label><br>
+                <input type="text" name="estado" id="estado"><br>
+            </fieldset>
+            </div><br>
+            <fieldset id="fieldset">
+                <legend>Dados da mensagem</legend>
+                <label for="assunto" class="required">Assunto</label><br>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="sugestão">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="mensagem" class="required">Mensagem</label><br>
+                <textarea type="text-area" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="10" required></textarea>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Enviar" name="enviar" id="enviar"><input type="reset" value="Limpar" name="limpar" id="limpar">
+            </div>
+        </form>
+    </main>
+    <!--Rodapé-->
+    <footer id="rodape">
+        <p>Desenvolvido por Aryel Anne. Todos os direitos reservados &copy; 2022.</p>
+    </footer>
+</body>
+</html>

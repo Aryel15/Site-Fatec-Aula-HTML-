@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para aulas de Desenvolvimento Web">
+    <meta name="keywords" content="Site, para, aulas, Desenvolvimento, Web">
+    <meta name="author" content="Aryel Anne">
+    <link rel="stylesheet" href="style.css">
+    <!--Titulo-->
+    <title>Comentários</title>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li class="atalho"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Conteúdo[1]&darr;</a></li>
+                <li class="atalho"><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Menu[2]&darr;</a></li>
+                <li class="atalho"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Rodapé[3]&darr;</a></li>
+                <li class="fonte"><a href="javascript:void(0)" id="aumentar" title="Diminuir fonte">A-</a></li>
+                <li class="fonte"><a href="javascript:void(0)" id="diminuir" title="Aumentar fonte">A+</a></li>
+                <li class="contraste"><a href="javascript:void(0)" id="semcontraste" title="Sem contraste">○</a></li>              
+                <li class="contraste"><a href="javascript:void(0)" id="contraste" title="Contraste">●</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="acessibilidade">Acessibilidade</a></li>              
+            </ul>
+        </div>
+        <div id="logo">
+            <a href="/index.html" title="página inicial">
+                <img src="imagem/fateclogo.png" alt="Logo Fatec Zona Leste 20 anos nas cores cinza e branco">
+            </a>
+        </div>
+        <!--menu responsivo-->  
+        <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <!--menu responsivo-->  
+        <nav id="menu">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/comentarios.html">Comentários</a></li>
+                <li><a href="/metadados.html">Metadados</a></li>
+                <li><a href="/lista_ordenada.html">Listas</a>
+                    <ul>
+                        <li><a href="/lista_ordenada.html#lista">Lista ordenada</a></li>
+                        <li><a href="/lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="/layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Conteúdo-->
+    <main id="conteudo">
+        <!--Breadcrumb-->
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Inicio</a></li>
+            <li>Comentários</li>
+        </ul>
+        <hr>
+        <h1>Comentários</h1>
+        <p>Comentários em HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.</p>
+        <p>Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe:</p>
+        <img src="/imagem/comentarios1.png" alt="Sintaxe para exibir comentários no html">
+        <p>Com os comentários, você pode colocar notificações e lembretes no seu código HTML:</p>
+        <img src="/imagem/comentarios.png" alt="Exemplo de comentarios no html">
+    </main>
+    <!--Rodapé-->
+    <br><br>
+    <footer id="rodape">
+        <p>Desenvolvido por Aryel Anne. Todos os direitos reservados &copy; 2022.</p>
+    </footer>
+</body>
+</html>

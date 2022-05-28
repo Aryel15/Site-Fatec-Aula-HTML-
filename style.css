@@ -386,7 +386,8 @@ code{
         margin: 0 auto;
         padding-bottom: 10px;
         padding-left: 0;
-        height: 70vh;
+        height: 311px;
+        margin-bottom: 20px;
         text-align: center;
     }
     nav{
@@ -397,6 +398,9 @@ code{
         float: right;
         margin: -90px 20px 0 90%;
         position: absolute;
+    }
+    label[for="bt_menu"]:hover{
+        cursor: pointer;
     }
     nav ul{
         padding: 0;
@@ -434,9 +438,13 @@ code{
     }
     nav li ul li:last-child{
         border: none;
+        padding: 0;
     }
     footer{
         margin-top: 14.8%;
+    }
+    main{
+        padding: 40px 10px 40px 10px;
     }
 }
 @media screen and (max-width:600px){

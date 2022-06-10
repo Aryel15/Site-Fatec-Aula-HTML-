@@ -5,6 +5,7 @@
 }
 body{
     background-color: #ebebeb;
+    font-size: 14px;
 }
 /*Barra de acessibilidade*/
 #acessibilidade{
@@ -355,15 +356,17 @@ code{
         margin: 5px;
         width: 150px;
     }
-    fieldset{
-        width:auto;
-        padding: 0 55px;
-    }
-    video, audio{
-         width: 65vw;
-         margin: 0 auto;
-    }
 }
+@media screen and (max-width:1140px){
+        fieldset{
+            width:auto;
+            padding: 0 55px;
+        }
+        video, audio{
+            width: 65vw;
+            margin: 0 auto;
+        }
+    }
 @media screen and (max-width:700px) {
     fieldset{
         width:auto;
@@ -385,6 +388,7 @@ code{
         padding-bottom: 10px;
         padding-left: 0;
         height: 311px;
+        margin-bottom: 20px;
         text-align: center;
     }
     nav{
@@ -441,7 +445,7 @@ code{
         margin-top: 14.8%;
     }
     main{
-        padding: 50px 10px 40px 10px;
+        padding: 40px 10px 40px 10px;
     }
 }
 @media screen and (max-width:600px){
@@ -462,6 +466,6 @@ code{
     }
     main{
         width: 100%;
-        padding: 50px 10px 40px 10px;
+        padding: 10px 10px 40px 10px;
     }
 }

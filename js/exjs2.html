@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/cep.js"></script>
+    <style>
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:10%;
+            font-size: 0.8rem;
+        }
+        #fieldset{
+            margin: 0;
+            width: auto;
+            padding: 30px;
+            border-radius: 15px;
+            padding-top: 10px;
+            border: 1px solid #000;
+        }
+        legend{
+            font-size: 1rem;
+            color: #bf1100;
+            padding: 0 10px;
+        }
+        input{
+            padding-left: 10px;
+            width: 100%;
+            margin-top:2px;
+            margin-bottom:5px;
+            height: 30px;
+        }
+        .buttons{
+            display: flex;
+            width: 300px;
+        }
+        #enviar{
+            border: solid 1px #bf1100;
+            background-color: #bf1100;
+            color: #fff;
+            width: 200px;
+            margin: 10px;
+            margin-left: 0;
+            padding:5px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #limpar{
+            background-color: white;
+            color: black;
+            border: solid 1px black;
+            width: 200px;
+            margin: 10px;
+            padding:5px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #enviar:hover, #limpar:hover{
+            border: solid 1px #43555f;
+            background-color: #43555f;
+            color: white;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <form name="cadastro" id="cadastro" onsubmit="validar()">
+        <fieldset id="fieldset">
+            <legend>Dados pessoais</legend>
+            <label for="nome" class="required">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br>
+            <label for="cpf" class="required">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99"><br>
+            <label for="email" class="required">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="nome@site.com.br"><br>
+            <label for="senha" class="required">Senha</label><br>
+            <input type="password" name="senha" id="senha"><br>
+            <label for="confirma" class="required">Confirmar senha</label><br>
+            <input type="password" name="confirma" id="confirma"><br>
+        </fieldset>
+        <div class="buttons">
+            <input type="submit" value="Enviar" name="enviar" id="enviar"><input type="reset" value="Limpar" name="limpar" id="limpar">
+        </div>
+    </form>
+</body>
+</html>

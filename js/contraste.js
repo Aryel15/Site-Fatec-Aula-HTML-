@@ -1,9 +1,9 @@
-var link_css = "/style.css";
+var link_css = "style.css";
 				
 if(getCookie2() == "contraste"){
-    link_css = "/contraste.css";
+    link_css = "contraste.css";
 }else if(getCookie() == "default"){
-    link_css = "/style.css";
+    link_css = "style.css";
 }
 
 $(document).ready(function(){
